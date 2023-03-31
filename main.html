@@ -8,9 +8,89 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+	<form action="post">
+		<div>
+
+			<label for="name">Name<sup>*</sup></label>
+			<input type="text" name="" id="name" required placeholder="Name"><br>
+		</div>
+		<div>
+
+			<label for="Email">Email<sup>*</sup></label>
+			<input type="email" required id="Email" placeholder="Email"><br>
+		</div>
+		<div>
+
+			<label for="gender">Gender<sup>*</sup></label>
+			<label for="gender_m">Male</label>
+			<input type="radio" id="gender_m" name="gender" required>
+			<label for="gender_f">Female</label>
+			<input type="radio" id="gender_f" name="gender" required>
+		</div>
+		<div>
+			<label for="cars">Car Brands<sup>*</sup></label>
+			<select name="cars" id="cars" required>
+				<option value="" disabled selected>--Please choose an option--</option>
+				<option value="BMW">BMW</option>
+				<option value="Audi">Audi</option>
+				<option value="Mercedez">Mercedez</option>
+			</select>			
+		</div>
+		<div>
+			<label for="age">Age<sup>*</sup></label>
+			<input type="number" id="age" name="age" min="0" max="120" required placeholder="age">
+		</div>
+		<div>
+			<label for="dob">DOB</label>
+			<input type="date" id="dob" required>
+		</div>
+		<div>
+			<label for="tel">Phone Number</label>
+			<input type="tel" id="tel" placeholder="xxx-xxx-xxxx" >
+		</div>
+		
+		<div>
+			<label for="Password">Password<sup>*</sup></label>
+			<input type="password" required id="Password" placeholder="phonenumber">
+		</div>
+		<div>
+			<input type="checkbox" id="TOS">
+			<label for="TOS">I agree to the TOS</label>
+		</div>
+		<div>
+			<button value="submit">submit</button>
+		</div>
+
+	</form>
+	<script type="text/javascript" src="./script.js">
+	</script>
 
 </body>
 
 </html>
+<!-- Make a Signup form4 that has the following HTML elements
+
+Name*
+Email*
+Gender* (radio buttons)
+Car Brands* (options : [BMW, Audi, Mercedez])
+Age*
+DOB*
+Phone Number
+Password*
+Checkbox*
+submit button
+Kindly follow all the instructions mentioned below so that your code passes all the test cases
+
+Instructions:
+
+* are required fields,
+Use method attribute value in this case for the form!
+The respective input elements for the mentioned fields should have ids (i). #name (ii). #email (iii). #gender_m (iv). gender_f (v). #cars (vi). #age (vii). #dob (viii). #tel (ix). #password (x). #tos For example, the element for selecting car brand should have id #cars.
+The radio buttons for gender should have name attribute as gender.
+All input elements must also have corresponding labels with for attribute set to id's of element they belong. For example, label for input of name will be <label for=""name""> Name</label>
+Use Button of type=submit
+Add placeholder same as the name of the fields Name, Email, Age, Password.
+Add placeholder for field Choose your car as --Please choose an option--.
+Add placeholder for field Phone number as xxx-xxx-xxxx.
+Add a checkbox for the field I agree to the TOS. -->
